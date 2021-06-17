@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.cs">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/product_style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+</head>
+<body>
+    <div class="app" id="product-app">
+        <div class="header">
+            <div class="grid">
+                <div class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item header__nav-item-qr">Vào cửa hàng
+                            <div class="header__qr">
+                                <img src="./assets/img/d91264e165ed6facc6178994d5afae79.png" alt="QR Code"
+                                    class="header__qr--img">
+                            </div>
+                        </li>
+                        <li class="header__nav-item"><span class="no-poiter" style="color: aliceblue;">Kết nối</span>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="" class="header__nav-icon-link">
+                                <i class=" header__nav--icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__nav-icon-link">
+                                <i class="header__nav--icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item header__nav-item-notify"><i
+                                class=" header__nav--icon far fa-bell"></i>Thông báo
+                            <div class="header__notification">
+                                <header class="header__notification-header">
+                                    <h3>Thông báo mới nhất</h3>
+                                </header>
+                                <ul class="header__notification-list">
+                                    <li class="header__notification-item">
+                                        <a href="#" class="header__notification-link">
+                                            <img src="https://cdn.theatlantic.com/thumbor/QmYmk9KkT2xI96NSHhVO17-yY2k=/1x118:4524x2662/720x405/filters:format(png)/media/img/2018/05/GettyImages_514897242/original.png"
+                                                alt="" class="header__notification-img">
+                                            <div class="header__notification-info">
+                                                <span class="header__notification-name">Mỹ phẩm chính hãng</span>
+                                                <p class="header__notification-desc">Sản phẩm tuyệt vời</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="header__notification-list">
+                                    <li class="header__notification-item">
+                                        <a href="#" class="header__notification-link">
+                                            <img src="https://cdn.theatlantic.com/thumbor/QmYmk9KkT2xI96NSHhVO17-yY2k=/1x118:4524x2662/720x405/filters:format(png)/media/img/2018/05/GettyImages_514897242/original.png"
+                                                alt="" class="header__notification-img">
+                                            <div class="header__notification-info">
+                                                <span class="header__notification-name">Mỹ phẩm chính hãng</span>
+                                                <p class="header__notification-desc">Sản phẩm tuyệt vời</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="header__notification-list">
+                                    <li class="header__notification-item">
+                                        <a href="#" class="header__notification-link">
+                                            <img src="https://cdn.theatlantic.com/thumbor/QmYmk9KkT2xI96NSHhVO17-yY2k=/1x118:4524x2662/720x405/filters:format(png)/media/img/2018/05/GettyImages_514897242/original.png"
+                                                alt="" class="header__notification-img">
+                                            <div class="header__notification-info">
+                                                <span class="header__notification-name">Mỹ phẩm chính hãng</span>
+                                                <p class="header__notification-desc">Sản phẩm tuyệt vời</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="header__notification-list">
+                                    <li class="header__notification-item">
+                                        <a href="#" class="header__notification-link">
+                                            <img src="https://cdn.theatlantic.com/thumbor/QmYmk9KkT2xI96NSHhVO17-yY2k=/1x118:4524x2662/720x405/filters:format(png)/media/img/2018/05/GettyImages_514897242/original.png"
+                                                alt="" class="header__notification-img">
+                                            <div class="header__notification-info">
+                                                <span class="header__notification-name">Mỹ phẩm chính hãng</span>
+                                                <p class="header__notification-desc">Sản phẩm tuyệt vời</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notification-footer">
+                                    <a href="#" class="header__notification-footer-link">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__nav-item"><i class=" header__nav--icon fas fa-question-circle"></i>Trợ giúp
+                        </li>
+                        <!-- Regisrer & Login -->
+                        <!-- <li class="header__nav-item header__nav-item--strong">Đăng ký</li>
+                        <li class="header__nav-item header__nav-item--strong">Đăng nhập</li> -->
+                        <!-- User Profile -->
+                        <li class="header__nav-item header__nav-name">
+                            <div class="header__user-profile">
+                                <i class="header__nav--icon fas fa-user-circle"></i>
+                                Toan06011998
+                                <div class="header__profile-box">
+                                    <ul class="header__profile-list">
+                                        <li class="header__profile-item">
+                                            <a href="#" class="header__profile-link">Tài khoản của tôi</a>
+                                        </li>
+                                        <li class="header__profile-item">
+                                            <a href="#" class="header__profile-link">Đơn mua</a>
+                                        </li>
+                                        <li class="header__profile-item">
+                                            <a href="#" class="header__profile-link">Đơn xuất</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Searching -->
+                <div class="header__searching">
+                    <div class="header__searching-container">
+                        <div class="header__logo">
+                            <div class="header__logo-icon">
+                                <a class="header__logo-icon-link" href="index.html"><i class="fab fa-cc-amex"></i></a>
+                                <a href="index.html" class="header__logo-icon-back"><i class="fas fa-arrow-left"></i></a>
+                            </div>
+
+                        </div>
+                        <div class="header__search">
+                            <div class="header__search-input">
+                                <input type="text" class="header__search-text"
+                                    placeholder="Tìm sản phẩm,...">
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">
+                                        Lịch sử tìm kiếm
+                                    </h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a class="header__search-history-link" href="">Tai nghe không dây</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a class="header__search-history-link" href="">Quạt tản nhiệt</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header__search-btn-items">
+                                <button class="header__search-btn">
+                                    <div class="header__search-btn-icon">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="header__cart">
+                            <a href="#" class="header__cart-link header__cart-link-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                            <div class="header__cart-box">
+                                <div class="header__cart-heading">
+                                    <h3>Sản phẩm mới thêm</h3>
+                                </div>
+                                <ul class="header__cart-list">
+                                    <li class="header__cart-item">
+                                        <a href="#" class="header__cart-link">
+                                            <img src="https://cdn.theatlantic.com/thumbor/QmYmk9KkT2xI96NSHhVO17-yY2k=/1x118:4524x2662/720x405/filters:format(png)/media/img/2018/05/GettyImages_514897242/original.png"
+                                                alt="" class="header__cart-img">
+                                            <div class="header__cart-info">
+                                                <span class="header__cart-name">Chuột không dây Logitech</span>
+                                                <snap class="header__cart-price">1.000.000 đ</snap>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="header__cart-list">
+                                    <li class="header__cart-item">
+                                        <a href="#" class="header__cart-link">
+                                            <img src="https://cdn.theatlantic.com/thumbor/QmYmk9KkT2xI96NSHhVO17-yY2k=/1x118:4524x2662/720x405/filters:format(png)/media/img/2018/05/GettyImages_514897242/original.png"
+                                                alt="" class="header__cart-img">
+                                            <div class="header__cart-info">
+                                                <span class="header__cart-name">Chuột không dây Logitech</span>
+                                                <snap class="header__cart-price">1.000.000 đ</snap>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="header__cart-list">
+                                    <li class="header__cart-item">
+                                        <a href="#" class="header__cart-link">
+                                            <img src="https://cdn.theatlantic.com/thumbor/QmYmk9KkT2xI96NSHhVO17-yY2k=/1x118:4524x2662/720x405/filters:format(png)/media/img/2018/05/GettyImages_514897242/original.png"
+                                                alt="" class="header__cart-img">
+                                            <div class="header__cart-info">
+                                                <span class="header__cart-name">Chuột không dây Logitech</span>
+                                                <snap class="header__cart-price">1.000.000 đ</snap>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="header__cart-list">
+                                    <li class="header__cart-item">
+                                        <a href="#" class="header__cart-link">
+                                            <img src="https://cdn.theatlantic.com/thumbor/QmYmk9KkT2xI96NSHhVO17-yY2k=/1x118:4524x2662/720x405/filters:format(png)/media/img/2018/05/GettyImages_514897242/original.png"
+                                                alt="" class="header__cart-img">
+                                            <div class="header__cart-info">
+                                                <span class="header__cart-name">Chuột không dây Logitech</span>
+                                                <snap class="header__cart-price">1.000.000 đ</snap>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="header__cart-footer">
+                                    <div class="header__cart-footer-content">
+                                        <h3 class="header__cart-footer-quantity">4 sản phẩm thêm giỏ hàng</h3>
+                                        <button class="btn btn--primary btn--cart">Xem giỏ hàng</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="header__sort">
+                            <a href="#" class="header__cart-sort-icon">
+                                <i class="fas fa-filter"></i>
+                            </a> 
+                             
+                        </div>
+                    </div>
+                    <div class="header__product-recomend">
+                        <ul class="header__product-list">
+                            <li class="header__product-items">
+                                <a href="" class="header__product-link">Sạc nhanh</a>
+                                <a href="" class="header__product-link">Sách</a>
+                                <a href="" class="header__product-link">Màn hình</a>
+                                <a href="" class="header__product-link">Chuột</a>
+                                <a href="" class="header__product-link">Phím</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- product recomend -->
+            </div>
+        </div>
+        <div class="product__container">
+            <div class="grid">
+                <div class="grid__row" style="background-color: white; padding-bottom: 24px;">
+                    <div class="grid__column-4">
+                        <div class="product__image">
+                            <img src="./assets/img/Capture.JPG" alt="" class="product__image-avatar">
+                            <div class="product__image-more">
+                                <img src="./assets/img/Capture1.JPG" alt="" class="product__image-more-single">
+                                <img src="./assets/img/Capture1.JPG" alt="" class="product__image-more-single">
+                                <img src="./assets/img/Capture1.JPG" alt="" class="product__image-more-single">
+                                <img src="./assets/img/Capture1.JPG" alt="" class="product__image-more-single">
+                                <img src="./assets/img/Capture1.JPG" alt="" class="product__image-more-single">
+                            </div>
+                            <div class="product__image-action">
+                                <div class="product__image-action-share">
+                                    <span class="share-title">Chia sẻ:</span>
+                                    <ul class="share__items">
+                                        <li class="share__list">
+                                            <a href="" class="share__link" style="color: #0384FF;"><i class="fab fa-facebook-messenger"></i></a>
+                                            <a href="" class="share__link" style="color: #3B5999;"><i class="fab fa-facebook"></i></a>
+                                            <a href="" class="share__link" style="color: #DD5044;"><i class="fab fa-google-plus"></i></a>
+                                            <a href="" class="share__link" style="color: #DE0217;"><i class="fab fa-pinterest"></i></a>
+                                            <a href="" class="share__link" style="color: #10C2FF;"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product__image-action-like">
+                                    <a href="" style="font-size: 16px; color: palevioletred;"><i class="fas fa-heart"></i></a>
+                                    <span class="share-title">Đã thích(1k)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column-8">
+                        <div class="product__details">
+                            <span class="product__details-name">
+                                Chuột Máy Tính Laptop Sky9 Có LED Nhiều Màu Phong Cách Hiện Đại Ấn Tượng
+                            </span>
+                            <div class="product__details-feedback">
+                                <div class="product__details-feedback__stars">
+                                    <span class="product__details-feedback-amount amount-stars">4.9</span>
+                                    <ul class="feedback__stars">
+                                        <li class="feedback__stars-list"><i class="fas fa-star"></i></li>
+                                        <li class="feedback__stars-list"><i class="fas fa-star"></i></li>
+                                        <li class="feedback__stars-list"><i class="fas fa-star"></i></li>
+                                        <li class="feedback__stars-list"><i class="fas fa-star"></i></li>
+                                        <li class="feedback__stars-list"><i class="fas fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="product__details-feedback__evaluate">
+                                    <span class="product__details-feedback-amount">1.9 K</span>
+                                    <span class="product__details-feedback-name">Đánh giá</span>
+                                </div>
+                                <div class="product__details-feedback__sold">
+                                    <span class="product__details-feedback-amount">2.9 K</span>
+                                    <span class="product__details-feedback-name">Đã bán</span>
+                                </div>
+                            </div>
+                            <div class="product__details-sale">
+                                <span class="product__details-sale__flash">
+                                    FLASH SALE
+                                </span>
+                                <div class="product__details-sale__time">
+                                    <span class="product__details-sale__time-title">
+                                        <i class="far fa-clock" style="font-size: 17px;"></i>
+                                        KẾT THÚC TRONG
+                                    </span>
+                                    <div class="product__details-sale__time-play">
+                                        <div class="time-play"><span class="time-play__number">01</span></div>
+                                        <div class="time-play"><span class="time-play__number">05</span></div>
+                                        <div class="time-play"><span class="time-play__number">43</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__details-price">
+                                <span class="product__details-price__before">
+                                    1.000.000 đ
+                                </span>
+                                <span class="product__details-price__after">
+                                    900.000 đ
+                                </span>
+                                <div class="product__details-price__ratio">
+                                    <span class="product__details-price__ratio-text">
+                                        10% Giảm
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__details-code">
+                                <div class="product__details-title">
+                                    <span class="details-title__text">Mã giảm giá của shop</span>
+                                </div>
+                                <div class="product__details-code__vouchers">
+                                    <div class="product__details-code__vouchers-item">
+                                        <span class="product__details-code__vouchers-text">
+                                            Giảm 1K
+                                        </span>
+                                    </div>
+                                    <div class="product__details-code__vouchers-item">
+                                        <span class="product__details-code__vouchers-text">
+                                            Giảm 1K
+                                        </span>
+                                    </div>
+                                    <div class="product__details-code__vouchers-item">
+                                        <span class="product__details-code__vouchers-text">
+                                            Giảm 1K
+                                        </span>
+                                    </div>
+                                    <div class="product__details-code__vouchers-item-mobile" onclick="openVouchers()">
+                                        <i class="fas fa-chevron-down" style="font-size: 16px; line-height: 22px;"></i>
+                                    </div>
+                                    
+                                </div>
+                                <div id="Box-vouchers" class="product__details-vouchers">
+                                    <span class="product__details-vouchers__header">
+                                        Mã giảm giá của Shop
+                                    </span>
+                                    <span class="product__details-vouchers__header-desc">
+                                        Tiết kiệm hơn khi áp dụng mã giảm giá của Shop. Liên hệ với Shop khi gặp trục trặc về mã giảm giá do Shop tự tạo
+                                    </span>
+                                    <ul class="product__details-vouchers__container">
+                                        <li class="product__details-vouchers__container-list">
+                                            <div class="voucher">
+                                                <div class="voucher__logo">
+
+                                                </div>
+                                                <div class="voucher__detail">
+                                                    <span class="voucher__detail-desc">
+                                                        Giảm 1K đơn tối thiểu 69K
+                                                    </span>
+                                                    <span class="voucher__detail-date">
+                                                        HSD: 05.07.2021
+                                                    </span>
+                                                </div>
+                                                <button class="btn-voucher">
+                                                    Lưu
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li class="product__details-vouchers__container-list">
+                                            <div class="voucher">
+                                                <div class="voucher__logo">
+
+                                                </div>
+                                                <div class="voucher__detail">
+                                                    <span class="voucher__detail-desc">
+                                                        Giảm 1K đơn tối thiểu 69K
+                                                    </span>
+                                                    <span class="voucher__detail-date">
+                                                        HSD: 05.07.2021
+                                                    </span>
+                                                </div>
+                                                <button class="btn-voucher">
+                                                    Lưu
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li class="product__details-vouchers__container-list">
+                                            <div class="voucher">
+                                                <div class="voucher__logo">
+
+                                                </div>
+                                                <div class="voucher__detail">
+                                                    <span class="voucher__detail-desc">
+                                                        Giảm 1K đơn tối thiểu 69K
+                                                    </span>
+                                                    <span class="voucher__detail-date">
+                                                        HSD: 05.07.2021
+                                                    </span>
+                                                </div>
+                                                <button class="btn-voucher">
+                                                    Lưu
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="product__voucher-close" onclick="closeVouchers()">
+                                        <span>Đóng</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__details-ship">
+                                <div class="product__details-title">
+                                    <span class="details-title__text">Vận chuyển</span>
+                                </div>
+                                <div class="ship-icon">
+                                    <i class="fas fa-truck" style="color: #00BFA5; margin-bottom: 30px;"></i>
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <div class="product__details-ship__details">
+                                    <div class="product__details-ship__details-free">
+                                        <span class="free__title">
+                                            Miễn Phí Vận Chuyển
+                                        </span>
+                                        <span class="free__text">
+                                            Miễn Phí Vận Chuyển Khi Đơn Đạt Giá Trị Tối Thiểu
+                                        </span>
+                                    </div>
+                                    <div class="product__details-ship__details-address">
+                                        <div class="address__title">
+                                            <span class="address__title-text">
+                                                Vận Chuyển Tới
+                                            </span>
+                                            <span class="address__title-text">
+                                                Phí Vận Chuyển
+                                            </span>
+                                        </div>
+                                        <div class="address__details">
+                                            <span class="address__details-desc">
+                                                Quận Thủ Đức, Hồ Chí Minh
+                                            </span>
+                                            <span class="address__details-desc">
+                                               15.000đ - 30.000đ
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__details-classify">
+                                <div class="product__details-title">
+                                    <span class="details-title__text">Chọn Loại</span>
+                                </div>
+                                <div class="product__details-classify__desc" id="product-classify">
+                                    <div class="product__details-classify__desc-items">
+                                        <button class="btn-classify">ĐEN BẠC</button>
+                                        <button class="btn-classify">TRẮNG BẠC</button>
+                                        <button class="btn-classify">ĐEN BẠC + TẤM LÓT</button>
+                                        <button class="btn-classify">TRẮNG BẠC + TẤM LÓT</button>
+                                        <button class="btn-classify">BLACK STAR</button>
+                                        <button class="btn-classify">BLACK STAR + TẤM LÓT</button>
+                                        <button class="btn-classify">MÀU XÁM</button>
+                                        <button class="btn-classify">MÀU XÁM</button>
+                                    </div>
+                                    <div class="product__control">
+                                        <button class="btn__details-control btn-addCart">
+                                            <i class="fas fa-cart-plus addCart-icon"></i>Thêm Vào Giỏ Hàng
+                                        </button>
+                                        <button class="btn__details-control btn-buy">
+                                            Mua Ngay
+                                        </button>
+                                        <button class="btn__details-control btn-buy" onclick="closeClassify()">
+                                            Đóng
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile__product-classify" onclick="openClassify()">
+                                <span>Chọn loại hàng (ví dụ: màu sắc, kích thước,...)</span>
+                                <i class="fas fa-chevron-right" style="color: #757575; font-size: 18px; line-height: 40px;"></i>
+                            </div>
+                            <div class="product__details-quantity">
+                                <div class="product__details-title">
+                                    <span class="details-title__text" style="line-height: 32px;">Số Lượng</span>
+                                </div>
+                                <div class="product__details-quantity__desc">
+                                    <button class="btn-classify btn-calc">-</button>
+                                    <input type="text" class="quantity-text" placeholder="1">
+                                    <button class="btn-classify btn-calc">+</button>
+                                    <span class="details-title__text" style="padding-left: 10px;">
+                                        336 Sản Phẩm Có Sẵn
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__details-control">
+                                <button class="btn__details-control btn-addCart">
+                                    <i class="fas fa-cart-plus addCart-icon"></i>Thêm Vào Giỏ Hàng
+                                </button>
+                                <button class="btn__details-control btn-buy">
+                                    Mua Ngay
+                                </button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal using Mobile -->
+        
+        <!-- mobile -->
+        <div class="product__footer">
+            <div class="product__footer-control">
+                <i class="fas fa-cart-plus" style="color: white; font-size: 16px; margin-bottom: 0px;"></i>
+                <span class="product__footer-text">Thêm Vào Giỏ Hàng</span>
+            </div>
+            <div class="product__footer-control buy-now" onclick="openClassify()">
+                <span class="product__footer-text text-buy">Mua Ngay</span>
+            </div>
+        </div>
+        <div class="product__body">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-10">
+                        <div class="product__body-left">
+                            <div class="product__body-header">
+                                <div class="product__body-header__text">
+                                    CHI TIẾT SẢN PHẨM
+                                </div>
+                                <div class="product__body-discount">
+                                    <span class="product__body-discount__title">
+                                        Kho hàng
+                                    </span>
+                                    <span class="product__body-discount__number">
+                                        1000000
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__body-body">
+                                <div class="product__body-header__text">
+                                    MÔ TẢ SẢN PHẨM
+                                </div>
+                                <div class="product__body-description">
+                                    Loại nguồn hàng: hàng có sẵn
+                                    Màu sắc: nhiều màu sắc đẹp
+                                    Phạm vi tần số phản hồi: 20-20000
+                                    Loại tai nghe: tai nghe nhét tai
+                                    Đường kính giắc cắm: 3,5 mm
+                                    Có hoặc không có micro: có
+                                    Có phải tai nghe không dây: tai nghe có dây
+                                    Độ nhạy: 105-3
+                                    Nguồn ra tai nghe: âm thanh sống động
+                                    Loại giắc cắm: tai nghe có dây cáp
+                                    Trở kháng: 32Ω
+                                    Trọng lượng: 32g
+                                    Nguyên lý âm thanh: cuộn dây chuyển động
+                                    Chiều dài dây cáp: 1.1
+                                    Chất liệu dây cáp tai nghe: TPE
+                                    Cách đeo: nhét tai
+                                    Đường kính loa: 1406
+                                    Loại sản phẩm: Tai nghe
+                                
+                                    Phản hồi
+                                    (1) Nếu bạn hài lòng với sản phẩm của chúng tôi, vui lòng để lại phản hồi tích cực (5 sao).
+                                    (2) Vui lòng liên hệ với chúng tôi trước khi để lại bất kỳ phản hồi tiêu cực hoặc gây tranh cãi với Shopee.
+                                    (3) Xin hãy cho chúng tôi một cơ hội để giải quyết mọi vấn đề.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column-2">
+                        <h3 class="product__recommend-title">
+                            TOP SẢN PHẨM BÁN CHẠY
+                        </h3>
+                        <ul class="product__recommend">
+                            <li class="product__recommend-list">
+                                <a href="#" class="product__recommend-link">
+                                    <img class="product__recommend-link__image" src="./assets/img/Capture.JPG" alt="">
+                                    <div class="product__recommed-details">
+                                        <h3 class="product__recommed-details__name">Tai nghe nhét tai có dây 3.5mm</h3>
+                                        <span class="product__recommed-details__discount">930.000</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product__recommend-list">
+                                <a href="#" class="product__recommend-link">
+                                    <img class="product__recommend-link__image" src="./assets/img/Capture.JPG" alt="">
+                                    <div class="product__recommed-details">
+                                        <h3 class="product__recommed-details__name">Tai nghe nhét tai có dây 3.5mm</h3>
+                                        <span class="product__recommed-details__discount">930.000</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product__recommend-list">
+                                <a href="#" class="product__recommend-link">
+                                    <img class="product__recommend-link__image" src="./assets/img/Capture.JPG" alt="">
+                                    <div class="product__recommed-details">
+                                        <h3 class="product__recommed-details__name">Tai nghe nhét tai có dây 3.5mm</h3>
+                                        <span class="product__recommed-details__discount">930.000</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product__recommend-list">
+                                <a href="#" class="product__recommend-link">
+                                    <img class="product__recommend-link__image" src="./assets/img/Capture.JPG" alt="">
+                                    <div class="product__recommed-details">
+                                        <h3 class="product__recommed-details__name">Tai nghe nhét tai có dây 3.5mm</h3>
+                                        <span class="product__recommed-details__discount">930.000</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
